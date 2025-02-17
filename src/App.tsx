@@ -1,16 +1,15 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
 import OnePiece from './pages/OnePiece';
 import Naruto from './pages/Naruto';
 import KaijuNo8 from './pages/KaijuNo8';
 import Bleach from './pages/Bleach';
+import Home from './pages/Home';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-black text-white">
+      <div className="bg-black text-white">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, User, Menu, X } from 'lucide-react';
 
@@ -7,7 +7,7 @@ const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    <nav className="bg-black/95 backdrop-blur-sm fixed w-full z-50 border-b border-[#2DDEED]/20">
+    <nav className="bg-black/95 backdrop-blur-lg fixed z-10 top-0 w-full border-b border-[#2DDEED]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
