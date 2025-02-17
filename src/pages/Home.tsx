@@ -1,32 +1,8 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Testimonials from '../components/Testimonials';
+import { animeCategories } from '../constants/data';
 
-const animeCategories = [
-  {
-    title: 'One Piece Collection',
-    image: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&auto=format&fit=crop&q=60',
-    path: '/one-piece',
-    color: '#2DDEED'
-  },
-  {
-    title: 'Naruto Collection',
-    image: 'https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=800&auto=format&fit=crop&q=60',
-    path: '/naruto',
-    color: '#00EE00'
-  },
-  {
-    title: 'Kaiju No. 8 Collection',
-    image: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&auto=format&fit=crop&q=60',
-    path: '/kaiju-no-8',
-    color: '#8CFBFA'
-  },
-  {
-    title: 'Bleach Collection',
-    image: 'https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=800&auto=format&fit=crop&q=60',
-    path: '/bleach',
-    color: '#2DDEED'
-  }
-];
 
 const Home = () => {
   return (
@@ -58,9 +34,14 @@ const Home = () => {
         </div>
       </section>
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold mb-20 text-center gradient-text">
+        <h2 className="section-title mb-10 max-w-[700px] text-center  mx-auto">
           Explore Our Anime Fashion Collections
         </h2>
+        <p className="section-description text-center max-w-[900px]  mb-20 mx-auto">
+          Discover a fusion of style and fandom with our exclusive anime-inspired fashion collections.
+          From iconic designs to modern streetwear, wear your favorite anime with pride!
+        </p>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
           {animeCategories.map((category, index) => (
             <Link to={category.path} key={index}>
@@ -94,6 +75,7 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <Testimonials />
     </div>
   );
 };
