@@ -4,3 +4,11 @@ export interface TestimonialsProps {
     name: string;
     username: string;
 }
+
+export interface Item {
+    name: string;
+    description: string;
+    icon: string;
+    color: string;
+    time: string;
+  }

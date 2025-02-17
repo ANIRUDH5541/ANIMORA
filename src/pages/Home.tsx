@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Testimonials from '../components/Testimonials';
 import { animeCategories } from '../constants/data';
-
+import { AnimatedListDemo } from '@/components/HerolIst';
 
 const Home = () => {
   return (
@@ -22,14 +22,9 @@ const Home = () => {
                 <button className='btn btn-primary'>Shop Now</button>
               </div>
             </div>
-            <div className="md:h-[648px] flex items-center md:flex-1 2xl:ml-20 relative overflow-hidden rounded-lg">
-              {/* <img
-                src={boys}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div> */}
+            <div className="md:h-[648px] flex items-center md:flex-1 2xl:ml-20 relative rounded-lg">
+              <AnimatedListDemo />
             </div>
-
           </div>
         </div>
       </section>
