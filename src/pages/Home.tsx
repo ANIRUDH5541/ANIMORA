@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Testimonials from '../components/Testimonials';
 import { animeCategories } from '../constants/data';
-import { AnimatedListDemo } from '@/components/HerolIst';
+import { AnimatedListDemo } from '../components/HeroList';
 
 const Home = () => {
   return (
